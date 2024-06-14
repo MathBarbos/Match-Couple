@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Match couple - Find your soulmate</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1><em>Match couple</em></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html"><strong>Inicio</strong></a></li>
+        <li><a href="how-to-play.html"><strong>Como jogar?</strong></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <center>
+      <form action="submit.html" method="post">
+        <div>
+          <h2>Insira os dados para testar o match</h2>
+          <label for="name">Nome:</label>
+          <input class="insertData" type="text" id="name" name="name" maxlength="120" placeholder="Inserir nome"
+            required>
+        </div>
+        <div>
+          <label for="age">Idade:</label>
+          <input class="insertData" type="number" id="age" name="age" placeholder="Inserir idade" min="0" required>
+          <label for="gender">Gênero:</label>
+          <select class="insertData" id="gender" name="gender" placeholder="Ecolher um gênero" required>
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+            <option value="other">Outro</option>
+          </select>
+          <fieldset style="width:60%;">
+            <legend>Estado civil</legend>
+            <p><input class="marital-status" type="radio" value="married" name="marital-status">Casado</p>
+            <p><input checked="true" class="marital-status" type="radio" value="single" name="marital-status">Solteiro
+            </p>
+            <p><input class="marital-status" type="radio" value="divorced" name="marital-status">Divorciado</p>
+            <p><input class="marital-status" type="radio" value="other" name="marital-status">Não quero dizer</p>
+        </div>
+        <div>
+          <h2>Insira os dados do seu crush</h2>
+          <label for="couple-name">Nome:</label>
+          <input class="insertData" type="text" id="couple-name" maxlength="120" name="couple-name"
+            placeholder="Inserir nome do crush" required>
+        </div>
+        <div>
+          <label for="couple-age">Idade:</label>
+          <input class="insertData" type="number" id="couple-age" name="couple-age"
+            placeholder="Ecolher a idade do crush" min="0" required>
+          <label for="couple-gender">Gênero:</label>
+          <select class="insertData" id="couple-gender" name="couple-gender" placeholder="Ecolher o gênero do crush"
+            required>
+            <option value="female">Feminino</option>
+            <option value="male">Masculino</option>
+            <option value="other">Outro</option>
+          </select>
+          <fieldset style="width:60%;">
+            <legend>Estado civil</legend>
+            <p><input class="marital-status" type="radio" value="married" name="marital-status-1">Casado</p>
+            <p><input checked="true" class="marital-status" type="radio" value="single" name="marital-status-1">Solteiro
+            </p>
+            <p><input class="marital-status" type="radio" value="divorced" name="marital-status-1">Divorciado</p>
+            <p><input class="marital-status" type="radio" value="other" name="marital-status-1">Não quero dizer</p>
+          </fieldset>
+          <span>
+            <textarea class="insertData" name="mensagem" col="85" rows="4" readonly="true"
+              disabled> O site não se reponsabiliza pelas informações inseridas pelo usuário</textarea>
+          </span>
+          <span class="insertData" id="aceppet-term">
+            <p>
+              <input class="insertData" type="checkbox" name="aceppet-term" required">Aceito enviar os
+              dados para realizar o jogo
+            </p>
+          </span>
+        </div>
+        <button id="resetButton" type="reset" value="Limpar">Limpar</button>
+        <button type="submit">Enviar</button>
+      </form>
+    </center>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
